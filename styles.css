@@ -1,0 +1,64 @@
+/*paleta{
+
+    --principal:#276E90;
+    --complementario:#CECFC9;
+    --oscuro:#0A3143;
+    --claro:#EFEFEF;
+}
+*/
+
+body{
+    background-color: #276E90;
+   
+}
+
+h1{
+   color: #EFEFEF;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+.item {
+    size: 33%;
+    height: 33%;
+    max-width: 100%;
+    background-color: black !important;
+}
+
+.boton-agregar {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+.boton-editar {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+.boton-remover {
+    background-color:gray ;
+    border: none;
+    color: black;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+h1{
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
