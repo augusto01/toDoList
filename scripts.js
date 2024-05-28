@@ -1,20 +1,26 @@
-document.addEventListener('DOMContentLoaded',function(){
-
-
+document.addEventListener('DOMContentLoaded', function() {
+    // BOTONES 
     let btn_addhomework = document.querySelector('.boton-agregar');
     let btn_editar = document.querySelector('.boton-editar');
     let btn_remover = document.querySelector('.boton-remover');
 
-   btn_addhomework.addEventListener('click', function(){
-    console.log('EY ME HAS HECHO CLICK !')
-   });
+    // INPUTS 
+    let inp_item_input = document.querySelector('.item-input');
+    let inp_agregar_tarea = document.querySelector('.input');
 
-   btn_editar.addEventListener('click', function(){
-    console.log('EY ME HAS HECHO CLICK 1 !')
-   });
+    /** BOTON AGREGAR TAREA  */
+    btn_addhomework.addEventListener('click', function() {
+        inp_item_input.disabled = false;
+        inp_item_input.value = inp_agregar_tarea.value; // Usamos .value en lugar de .textContent para obtener el valor del input
+    });
 
-   btn_remover.addEventListener('click', function(){
-    console.log('EY ME HAS HECHO CLICK 2 !')
-   });
+    /** BOTON EDITAR TAREA  */
+    btn_editar.addEventListener('click', function() {
+        console.log('¡Ey, me has hecho clic en Editar!');
+    });
 
-})
+    /** BOTON REMOVER TAREA  */
+    btn_remover.addEventListener('click', function() {
+        console.log('¡Ey, me has hecho clic en Remover!');
+    });
+});
