@@ -24,7 +24,7 @@ h1{
 }
 
 .container{
-    margin-top: 10px;
+  
 }
 
 .item {
@@ -32,6 +32,18 @@ h1{
     height: 33%;
     max-width: 100%;
     background-color: black !important;
+}
+
+.item-input{
+    size: 50px;
+    height: 50px;
+   
+    border: solid white 1px;
+    border-radius: 10px;
+    font-weight: 18px;
+    color: white;
+    background: none;
+
 }
 
 .boton-agregar {
@@ -42,19 +54,32 @@ h1{
     cursor: pointer;
 }
 .boton-editar {
-    background-color: gray;
-    border: none;
+    size: 50px;
+    height: 50px;
+    background: none;
+    border-radius: 10px;
+
+    border: solid white 1px;
     color: black;
     padding: 2px 20px;
     cursor: pointer;
-    margin-left:3px ;
+    margin: 0 5px 0 5px;
+
+    color: #62d0ff;
+
+    font-size: 1.4rem;
+    font-family: sans-serif;
 }
 .boton-remover {
-    margin-left:3px ;
-    background-color:gray ;
+    size: 50px;
+    height: 50px;
+    background-color:rgb(255, 6, 46) ;
+    border-radius: 10px;
     border: none;
     color: black;
     padding: 2px 20px;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
     cursor: pointer;
 }
 h1{
@@ -71,6 +96,3 @@ h1{
     display: none;
 }
 
-.margintask{
-    margin-top: 10px;
-}
