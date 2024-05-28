@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Crear elementos HTML para la nueva tarea
         let taskDiv = document.createElement('div');
         taskDiv.classList.add('task-item'); // Agregar la clase 'task-item' al nuevo elemento <div>
+        taskDiv.classList.add('margintask');
 
         let taskInput = document.createElement('input');
         taskInput.type = 'text';

@@ -47,8 +47,10 @@ h1{
     color: black;
     padding: 2px 20px;
     cursor: pointer;
+    margin-left:3px ;
 }
 .boton-remover {
+    margin-left:3px ;
     background-color:gray ;
     border: none;
     color: black;
@@ -67,4 +69,8 @@ h1{
 
 .container:first-of-type {
     display: none;
+}
+
+.margintask{
+    margin-top: 10px;
 }
