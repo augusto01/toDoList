@@ -10,8 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /** BOTON AGREGAR TAREA  */
     btn_addhomework.addEventListener('click', function() {
-        inp_item_input.disabled = false;
-        inp_item_input.value = inp_agregar_tarea.value; // Usamos .value en lugar de .textContent para obtener el valor del input
+        if (inp_agregar_tarea.value.trim() === '') {
+            window.alert('¡Ingresa una tarea válida!');
+        } else {
+            inp_item_input.disabled = false;
+            inp_item_input.value = inp_agregar_tarea.value.trim();
+        }
+       
     });
 
     /** BOTON EDITAR TAREA  */
